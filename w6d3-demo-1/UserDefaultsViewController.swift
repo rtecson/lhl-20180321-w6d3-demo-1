@@ -41,7 +41,7 @@ extension UserDefaultsViewController {
     
     private func saveUserPreferences() {
         if let newName = nameTextField.text {
-            UserDefaults.standard.set(newName, forKey: "userName")
+            UserDefaults.standard.set(newName, forKey: "userName")  // Create or overwrite
         }
         if let newHighScore = highScoreTextField.text {
             UserDefaults.standard.set(newHighScore, forKey: "highScore")
@@ -50,7 +50,9 @@ extension UserDefaultsViewController {
 
     private func loadUserPreferences() {
         nameTextField.text = UserDefaults.standard.string(forKey: "userName")
-        highScoreTextField.text = UserDefaults.standard.string(forKey: "highScore")
+//        highScoreTextField.text = UserDefaults.standard.string(forKey: "highScore")
+        let highScore = UserDefaults.standard.integer(forKey: "highScore")
+        highScoreTextField.text = "\(highScore)"
     }
 
     private func dismissKeyboard() {

@@ -2,4 +2,54 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "w6d3-demo-1/FilesViewController.swift"
+            timestampString = "543345546.144711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fileUrl"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;Foundation.URL&gt; in w6d3_demo_1.FilesViewController.(fileUrl in _8B90B944205C77D5FA4EE70B14035A0A).getter : Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "w6d3-demo-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Roland/Desktop/w6d3-demo-1/w6d3-demo-1/FilesViewController.swift"
+                  timestampString = "543345546.152051"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "551">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () -&gt; Swift.String in closure #1 () -&gt; Swift.Optional&lt;Foundation.URL&gt; in w6d3_demo_1.FilesViewController.(fileUrl in _8B90B944205C77D5FA4EE70B14035A0A).getter : Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "w6d3-demo-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Roland/Desktop/w6d3-demo-1/w6d3-demo-1/FilesViewController.swift"
+                  timestampString = "543345546.155081"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

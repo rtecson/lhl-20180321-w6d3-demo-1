@@ -33,10 +33,11 @@ class FilesViewController: UIViewController {
         // Get user's documents directory
         let fileManager = FileManager.default
         guard let documentsUrl = try? fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) else {
-            return nil
+            assertionFailure("Error, documents folder does not exist")
+            return nil  // This will never be executed
         }
         
-        // Generate filepath
+        // Generate filepath -- file may or may not exist yet
         let fileUrl = documentsUrl.appendingPathComponent("appData")
         return fileUrl
     }()
@@ -76,6 +77,7 @@ extension FilesViewController {
         }
         
         do {
+            // Create or overwrite the file
             try contents.write(to: fileUrl, atomically: false, encoding: .utf8)
         }
         catch {
